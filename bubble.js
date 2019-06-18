@@ -1,3 +1,5 @@
+var counter = 0;
+
 class Bubble {
   constructor() {
     this.x = 100;
@@ -9,15 +11,18 @@ class Bubble {
     this.x = random(0, width);
     this.y = random(0, height);
     this.r = random(20, 25);
+  }
+
+  draw() {
     noStroke();
     fill("pink");
     ellipse(this.x, this.y, this.r * 2);
   }
 
-  clicked() {
+  checkCollision() {
     let d = dist(mouseX, mouseY, this.x, this.y);
-
     if (d < this.r) {
+      counter += 1;
       return true;
     } else {
       return false;
