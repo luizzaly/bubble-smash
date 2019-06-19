@@ -1,0 +1,161 @@
+h1 {
+  font-family: "Anton", sans-serif;
+  color: black;
+  text-align: center;
+  font-size: 45px;
+}
+#wrapper {
+  display: flex;
+  justify-content: center;
+}
+#canvas-center button {
+  position: relative;
+  margin: 300;
+}
+
+.bubble1 {
+  position: relative;
+  left: -30px;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #000;
+  animation: bubble1 1s ease-in Infinite Alternate;
+}
+
+@keyframes bubble1 {
+  0% {
+    top: 0px;
+  }
+  95% {
+    width: 30px;
+  }
+  to {
+    top: 600px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.bubble2 {
+  position: relative;
+  right: 200px;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #000;
+  animation: bubble2 0.9s ease-in Infinite Alternate;
+}
+
+@keyframes bubble2 {
+  0% {
+    bottom: 0px;
+  }
+  95% {
+    width: 30px;
+  }
+  to {
+    top: 500px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.bubble5 {
+  position: relative;
+  right: 180px;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #000;
+  animation: bubble5 0.8s ease-in Infinite Alternate;
+}
+
+@keyframes bubble5 {
+  0% {
+    bottom: 0px;
+  }
+  95% {
+    width: 30px;
+  }
+  to {
+    top: 550px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.bubble3 {
+  position: relative;
+  right: -200px;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #000;
+  animation: bubble3 1s ease-in Infinite Alternate;
+}
+
+@keyframes bubble3 {
+  0% {
+    top: 0px;
+  }
+  95% {
+    width: 30px;
+  }
+  to {
+    top: 500px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.bubble4 {
+  position: relative;
+  right: -100px;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #000;
+  animation: bubble4 0.9s ease-in Infinite Alternate;
+}
+@keyframes bubble4 {
+  0% {
+    top: 0px;
+  }
+  95% {
+    width: 30px;
+  }
+  to {
+    top: 400px;
+    width: 30px;
+    height: 30px;
+  }
+}
+.bubble6 {
+  position: relative;
+  right: 0px;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #000;
+  animation: bubble6 0.8s ease-in Infinite Alternate;
+}
+@keyframes bubble6 {
+  0% {
+    top: 100px;
+  }
+  95% {
+    width: 30px;
+  }
+  to {
+    top: 650px;
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -9,7 +9,6 @@ class Square {
   setup() {
     this.x = random(0, width);
     this.y = random(0, height);
-    // this.randomAppear();
   }
 
   draw() {
@@ -19,13 +18,31 @@ class Square {
   }
 
   changePosition() {
-    this.x = random(0, width);
-    this.y = random(0, height);
+    let randX = random(0, width);
+    let randY = random(0, height);
+
+    while (
+      mouseX > randX &&
+      mouseX < randX + 70 &&
+      mouseY > randY &&
+      mouseY < randY + 70
+    ) {
+      randX = random(0, width);
+      randY = random(0, height);
+    }
+
+    this.x = randX;
+    this.y = randY;
   }
+  /*
+  changePositionAgain() {
+    if (this.x === mouseX && this.y === mouseY) changePosition();
+  }
+  */
 
   checkCollision() {
-    let d = dist(mouseX, mouseY, this.x, this.y);
-    if (d < this.d) {
+    let d = dist(mouseX, mouseY, this.x + this.d / 2, this.y + this.d / 2);
+    if (d < this.d / 2) {
       return true;
     } else {
       return false;
