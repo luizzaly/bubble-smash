@@ -17,10 +17,10 @@ function setup() {
   textFont("Anton");
 
   mysound = loadSound(
-    "/assets/zapsplat_multimedia_game_designed_bubble_pop_038_26304 (online-audio-converter.com).wav"
+    "assets/zapsplat_multimedia_game_designed_bubble_pop_038_26304 (online-audio-converter.com).wav"
   );
   crash = loadSound(
-    "/assets/zapsplat_impacts_glass_small_object_smash_break_hit_on_cardboard_002_29023 (online-audio-converter.com).wav"
+    "assets/zapsplat_impacts_glass_small_object_smash_break_hit_on_cardboard_002_29023 (online-audio-converter.com).wav"
   );
   button = createButton("Play");
   button.hide();
