@@ -43,6 +43,7 @@ class Square {
   checkCollision() {
     let d = dist(mouseX, mouseY, this.x + this.d / 2, this.y + this.d / 2);
     if (d < this.d / 2) {
+      crash.play();
       return true;
     } else {
       return false;

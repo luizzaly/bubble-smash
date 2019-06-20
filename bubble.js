@@ -22,7 +22,9 @@ class Bubble {
   checkCollision() {
     let d = dist(mouseX, mouseY, this.x, this.y);
     if (d < this.r) {
+      mysound.play();
       counter += 1;
+
       return true;
     } else {
       return false;
