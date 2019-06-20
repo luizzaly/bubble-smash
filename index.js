@@ -75,6 +75,7 @@ function draw() {
 }
 
 function reloadGame() {
+  counter = 0;
   button.hide();
   if ((dead = true)) dead = false;
   bubbles.forEach(bubble => {
